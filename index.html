@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bank</title>
+  <!-- **************************FAVICON****************************** -->
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+
+  <!-- **************************GOOGLE FONT************************** -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- **************************CSS STYLESHEET*********************** -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!-- *****************************NAVBAR**************************** -->
+  <nav>
+    <p class="welcome">Log in to get started</p>
+    <div class="logo">
+      <img src="images/logo.png" alt="">
+    </div>
+    <form class="login-form">
+      <input type="text" placeholder="Username" class="user" id="username">
+      <input type="password" placeholder="Password" class="user" id="password">
+      <button type="submit" class="login-btn">Log In &rarr;</button>
+    </form>
+  </nav>
+
+  <!-- *****************************MAIN***************************** -->
+  <main class="app">
+
+    <!-- ************************MAIN HEADER SECTION********************-->
+    <div id="balance-section-header">
+      <div>
+        <p class="current-balance-title">Current balance</p>
+        <p class="current-date">As of 21/9/2022</p>
+      </div>
+      <p class="current-balance"><span id="current-balance-amount">1000</span>$</p>
+    </div>
+
+    <!-- ************************MAIN MIDDLE SECTION******************* -->
+    <div id="balance-section-main">
+      <!-- *************************TRANSACTIONS************************* -->
+      <div id="transactions">
+        <!-- Single Transaction -->
+
+        <!--  <div class="single-transaction">
+          <div class="transaction-details">
+            <p class="transaction-state deposit"><small>5 deposit</small></p>
+            <p class="transaction-date"><small>5 days ago</small></p>
+          </div>
+          <p class="transaction-amount">1000$</p>
+        </div>
+                
+        <div class="single-transaction">
+          <div class="transaction-details">
+            <p class="transaction-state withdrawal"><small>5 withdrawal</small></p>
+            <p class="transaction-date"><small>21/9/2022</small></p>
+          </div>
+          <p class="transaction-amount">-1000$</p>
+        </div> -->
+
+      </div>
+
+
+      <!-- ************************BANK OPERATIONS************************ -->
+      <div id="bank-operation">
+        <div class="operation operation-transfer">
+          <p>Transfer money</p>
+          <form class="operation-form">
+            <div>
+              <input type="text" class="transfer-account">
+              <label for="transfer-account"><small>Transfer to</small></label>
+            </div>
+            <div>
+              <input type="number" class="transfer-amount">
+              <label for="transfer-amount"><small>Amount</small></label>
+            </div>
+            <button type="submit" class="transfer-btn">&rarr;</button>
+          </form>
+        </div>
+
+        <div class="operation operation-request">
+          <p>Request loan</p>
+          <form class="operation-form loan">
+            <div>
+              <input type="number" class="loan-amount"> <br>
+              <label for="loan-amount"><small>Amount</small></label>
+            </div>
+            <button type="submit" class="loan-btn">&rarr;</button>
+          </form>
+        </div>
+
+        <div class="operation operation-close-account">
+          <p>Close account</p>
+          <form class="operation-form">
+            <div>
+              <input type="text" id="confirm-username">
+              <label for="confirm-username"><small>Confirm username</small></label>
+            </div>
+            <div>
+              <input type="password" id="confirm-password">
+              <label for="confirm-password"><small>confirm password</small></label>
+            </div>
+            <button type="submit" class="close-btn">&rarr;</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- *************************MAIN LAST SECTION********************** -->
+    <div id="main-summary">
+      <div class="income-outcome-interest">
+        <div class="total income">
+          <p class="transaction-type"><small>in</small></p>
+          <p class="amount income-amount">1000$</p>
+        </div>
+        <div class="total outcome">
+          <p class="transaction-type"><small>out</small></p>
+          <p class="amount outcome-amount">1000$</p>
+        </div>
+        <div class="total interest">
+          <p class="transaction-type"><small>interest</small></p>
+          <p class="amount interest-amount">1000$</p>
+        </div>
+      </div>
+
+      <!-- ***************************SORT AMOUNT************************** -->
+      <div id="sort-amount">
+        <button type="submit" class="sort-btn">sort &darr;</button>
+      </div>
+
+
+      <!-- *****************************LOG OUT**************************** -->
+      <div>
+        <p><small>You will be logged out in <span class="log-out">02:00</span></small></p>
+      </div>
+    </div>
+  </main>
+
+  <!-- *****************************FOOTER***************************** -->
+  <footer>
+    <p>&copy; 2022, <strong>Bank</strong> by Tahmina Akter Tanni. All rights reserved.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>

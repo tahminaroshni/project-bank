@@ -1,0 +1,247 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 0;
+  outline: none;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f3f3f3;
+  color: #444;
+  width: 95%;
+  margin: 1rem auto;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav p {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.logo img {
+  height: 4rem;
+}
+
+.login-form {
+  display: flex;
+  /* justify-content: end;
+  align-items: center; */
+}
+
+.user {
+  padding: 0.5rem 0.9rem;
+  border-radius: 20px;
+  font-family: inherit;
+  font-size: 1.1rem;
+  text-align: center;
+  width: 9rem;
+  margin-right: 1rem;
+  border: 1px solid #fff;
+  transition: all 0.3s;
+
+}
+
+.user::placeholder {
+  color: #aaa;
+}
+
+.user:focus {
+  border-color: #ccc;
+}
+
+.login-btn {
+  font-size: 1.4rem;
+  color: inherit;
+}
+
+.login-btn:hover,
+.login-btn:focus,
+.sort-btn:hover,
+.sort-btn:focus {
+  color: #777;
+}
+
+.app {
+  width: 60%;
+  margin: 5rem auto 4rem;
+
+  /* animation */
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+#balance-section-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.current-balance-title {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.current-date {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.current-balance {
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+#balance-section-main {
+  display: grid;
+  grid-template-columns: 58% 38%;
+  gap: 4%;
+  margin: 1.5rem 0;
+}
+
+#transactions {
+  background-color: #fff;
+  overflow-y: scroll;
+  max-height: 30rem;
+}
+
+.single-transaction {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 3rem;
+  border-bottom: 2px solid #f3f3f3;
+}
+
+.transaction-details {
+  display: flex;
+  text-transform: uppercase;
+  font-weight: 500;
+  gap: 1.5rem;
+}
+
+.transaction-state {
+  padding: 0 0.8rem;
+  color: #fff;
+  border-radius: 15px;
+}
+
+.deposit {
+  background-color: #00b79f;
+}
+
+.withdrawal {
+  background-color: #f3442a;
+}
+
+.transaction-date {
+  color: #777;
+}
+
+.operation {
+  border-radius: 10px;
+  padding: 1.5rem 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.operation:last-child {
+  margin-bottom: 0;
+}
+
+.operation-transfer {
+  background-color: #00b79f;
+}
+
+.operation-request {
+  background-color: #f3442a;
+}
+
+.operation-close-account {
+  background-color: #fdb850;
+}
+
+.operation p {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.operation-form {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.operation-form input {
+  height: 1.8rem;
+  width: 8.5rem;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.3);
+  filter: blur();
+}
+
+.operation-form button {
+  padding: 0.5rem 1rem;
+  height: 1.8rem;
+  border-radius: 5px;
+  background-color: #fff;
+  font-size: 1.5rem;
+  display: flex;
+  place-items: center;
+}
+
+.loan {
+  justify-content: flex-start;
+}
+
+#main-summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.income-outcome-interest {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+  align-items: flex-end;
+}
+
+.total {
+  display: flex;
+  gap: 0.5rem;
+  text-transform: uppercase;
+}
+
+.transaction-type {
+  margin-top: 0.4rem;
+}
+
+.amount {
+  font-size: 1.5rem;
+  color: #00b79f;
+}
+
+.outcome-amount {
+  color: #f3442a;
+}
+
+.sort-btn {
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+
+.log-out {
+  font-weight: 600;
+}
+
+footer {
+  margin-bottom: 3rem;
+  text-align: center;
+}
