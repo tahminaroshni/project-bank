@@ -26,7 +26,7 @@ nav p {
 }
 
 .logo img {
-  height: 4rem;
+  height: 5rem;
 }
 
 .login-form {
@@ -131,11 +131,11 @@ nav p {
 }
 
 .deposit {
-  background-color: #00b79f;
+  background-color: #6c9cdb;
 }
 
 .withdrawal {
-  background-color: #f3442a;
+  background-color: #9884b7;
 }
 
 .transaction-date {
@@ -153,11 +153,11 @@ nav p {
 }
 
 .operation-transfer {
-  background-color: #00b79f;
+  background-color: #6c9cdb;
 }
 
 .operation-request {
-  background-color: #f3442a;
+  background-color: #9884b7;
 }
 
 .operation-close-account {
